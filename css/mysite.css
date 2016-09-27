@@ -4,7 +4,7 @@ html {
 }
 
 body {
-  background-color: #90caf9;
+  background-color: #e3f2fd;
 }
 
 .paragraph-normal {
@@ -71,6 +71,19 @@ input[type="submit"]:hover {
 
 #form {
     border-radius: 20px;
-    background-color: #f2f2f2;
+    background-color: white;
     padding: 20px;
+}
+
+#links {
+  display: inline-block;
+}
+
+.brightness {
+  float: left;
+  margin: 10px
+}
+
+.brightness img:hover {
+    opacity: .5;
 }

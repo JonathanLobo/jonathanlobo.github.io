@@ -6,11 +6,11 @@
 
     <title>Jonathan Lobo</title>
 
-    <link rel="stylesheet" href="./css/mysite.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
     <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
+    <link rel="stylesheet" href="./css/mysite.css">
 
   </head>
   <body>
@@ -137,54 +137,68 @@
     </div>
 </div>
 
-  <h3 class="black-text center">Contact Jonathan Lobo</h2>
-
-  <div class="container" id="form">
-    <form action="">
-      <label for="firstName">First Name</label>
-      <input type="text" id="firstName" name="firstname">
-
-      <label for="lastName">Last Name</label>
-      <input type="text" id="lastName" name="lastname">
-
-      <label for="lastName">E-mail Address</label>
-      <input type="text" id="email" name="email">
-
-      <label for="Comments">Comments</label>
-      <textarea id="textArea" class="materialize-textarea"></textarea>
-
-      <a class="btn blue waves-effect waves-light white-text">Submit</a>
-    </form>
-  </div>
   <br><br>
 
-    <footer class="page-footer blue">
-
+    <footer class="page-footer blue lighten-2">
       <div class="container">
         <div class="row">
           <div class="col l6 s12">
-            <h5 class="white-text">About Me</h5>
-            <p class="grey-text text-lighten-4">Insert cool stuff here.</p>
+            <form class="col s12">
+              <div class="row">
+                <div class="input-field col s6">
+                    <i class="material-icons prefix white-text">account_circle</i>
+                    <input id="nameBox" type="text" class="validate white-text">
+                    <label for="nameBox" class="white-text">Name</label>
+                </div>
 
+                <div class="input-field col s6">
+                    <i class="material-icons prefix white-text">email</i>
+                    <input id="email" type="email" class="validate white-text">
+                    <label for="email" class="white-text">E-mail</label>
+                </div>
 
+                <div class="input-field col s12">
+                    <i class="material-icons prefix white-text">mode_edit</i>
+                    <textarea id="comments" class="materialize-textarea white-text"></textarea>
+                    <label for="comments" class="white-text">Comments</label>
+                </div>
+
+                <div class="center">
+                    <button class="btn waves-effect waves-light red darken-1 white-text" type="submit">Submit</button>
+                </div>
+              </div>
+            </form>
           </div>
           <div class="col l3 s12">
-            <h5 class="white-text">Social Network Links</h5>
-            <ul id="links">
-              <li><a class="white-text" href="https://www.linkedin.com/in/jonathan-lobo-8232b3103">LinkedIn</a></li>
-              <li><a class="white-text" href="https://github.com/JonathanLobo">GitHub</a></li>
-              <li><a class="white-text" href="#">Facebook</a></li>
-              <li><a class="white-text" href="#">Twitter</a></li>
+                <h5 class="white-text">Jonathan Lobo</h5>
+                <ul>
+                    <li><a class="white-text" href="#">Home</a></li>
+                    <li><a class="white-text" href="#">About</a></li>
+                </ul>
+          </div>
+          <div class="col l3 s12" id="links">
+            <h5 class="white-text">Connect with Me</h2>
+            <ul>
+              <li><div class="brightness"><a class="white-text" href="https://www.linkedin.com/in/jonathan-lobo-8232b3103"><img src="./img/social-1_round-linkedin.svg"></div></a></li>
+              <li><div class="brightness"><a class="white-text" href="https://github.com/JonathanLobo"><img src="./img/social-1_round-github.svg"></div></a></li>
+              <li><div class="brightness"><a class="white-text" href="#"><img src="./img/social-1_round-facebook.svg"></div></a></li>
+              <li><div class="brightness"><a class="white-text" href="#"><img src="./img/social-1_round-twitter.svg"></div></a></li>
             </ul>
           </div>
         </div>
       </div>
+
       <div class="footer-copyright blue">
         <div class="container">
         &copy; Jonathan Lobo 2016
         </div>
       </div>
+      
     </footer>
+
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="js/materialize.js"></script>
+    <script src="js/init.js"></script>
 
   </body>
 </html>
