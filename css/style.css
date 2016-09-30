@@ -6,9 +6,13 @@
  * Made By MaterializeCSS.com
  */
 
+ .slider .indicators .indicator-item.active {
+   background-color: #2196f3;
+ }
+
 nav ul a,
 nav .brand-logo {
-  color: #444;
+  color: white;
 }
 
 p {
