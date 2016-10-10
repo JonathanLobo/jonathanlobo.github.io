@@ -6,6 +6,7 @@
 
     <title>Jonathan Lobo</title>
 
+    <link rel="icon" href="img/icon.ico">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
@@ -16,7 +17,7 @@
   <body>
 
     <div class="navbar-fixed">
-        <nav class="blue">
+        <nav class="indigo darken-4">
             <div class="nav-wrapper container">
                 <a href="#" class="brand-logo">Jonathan Lobo</a>
                 <ul class="right hide-on-med-and-down">
@@ -61,17 +62,12 @@
       </ul>
     </div>
 
-<!--
-    <div>
-      <a id="mainBanner" href="https://media.giphy.com/media/l3vR5bWP3axysgZs4/giphy.gif">
-        <img id="mainImg" src="./img/ab.jpg" alt="Placeholder-Image">
-      </a>
-    </div>
-  -->
   <br>
 
     <div class="center">
-      <button class="btn blue waves-effect waves-light white-text">Resume</button>
+      <a href="resume_v5.pdf" target="_blank">
+        <input class="black-text" type="button" value="Resume">
+      </a>
     </div>
 
     <div class="container">
@@ -120,39 +116,58 @@
             <div id="sidebar">
                 <h3>Projects</h3>
                 <div class="divider"></div>
-                <div class="card">
+                <div class="card img-expand" id="card1-div">
                     <div class="card-image">
-                        <img src="http://placehold.it/800x450">
-                        <span class="card-title">Card Title</span>
+                        <img src="img/karat.jpg">
                     </div>
                     <div class="card-content">
-                        <p>Text here.</p>
+                        <p class="card-header">Risk Assessment Tool</p>
+                        <div class="card-text" id="card1">
+                          <p>The Keyword Automated Risk Assessment Tool, or KARAT, is a GUI-based java program
+                            that I developed by myself using Swing while interning at Springleaf Financial Services during the summer of 2015.
+                            The app, meant for in-office use only, allows loan underwriters to enter the key and date
+                            of any application the company has received. The program connects to the company database to pull data for
+                            that application and then scores it on the appropriate risk model. Finally, the program outputs a Microsoft
+                            Excel report with model-specific data and the results.</p>
+                        </div>
                     </div>
                     <div class="card-action">
                         <a class="blue-text" href="#">Link</a>
                     </div>
                 </div>
 
-                <div class="card">
+                <div class="card img-expand" id="card2-div">
                     <div class="card-image">
-                        <img src="http://placehold.it/800x450">
-                        <span class="card-title">Card Title 2</span>
+                        <img src="img/loanapp.jpg">
                     </div>
                     <div class="card-content">
-                        <p>Text here.</p>
+                        <p class="card-header">Loan Decisioning App</p>
+                        <div class="card-text" id="card2">
+                          <p>The OneMain Loan Decisioning App is a prototype desktop program that I co-developed using JavaFX
+                            in the summer of 2016 while interning at OneMain Financial. The program is a "game" of sorts intended
+                            to train branch employees in underwriting. Any company employee can register an account. Once logged in,
+                            the user is shown any number of de-identified credit bureaus and loan applications and is asked to score the simulated
+                            applications based on company guidelines. After doing so, the user is presented with aggregated data based
+                            on the reviews of others and is also presented with the system's actual decision. The user is given a score
+                            based on the accuracy of his/her underwriting skills.</p>
+                        </div>
                     </div>
                     <div class="card-action">
                         <a class="blue-text" href="#">Link</a>
                     </div>
                 </div>
 
-                <div class="card">
+                <div class="card img-expand" id="card3-div">
                     <div class="card-image">
-                        <img src="http://placehold.it/800x450">
-                        <span class="card-title">Card Title 3</span>
+                        <img src="img/kenken.jpg">
                     </div>
                     <div class="card-content">
-                        <p>Text here.</p>
+                        <p class="card-header">KenKen Solver</p>
+                        <div class="card-text" id="card3">
+                          <p>My <a href="https://en.wikipedia.org/wiki/KenKen">KenKen</a>
+                            Solver is a simple java program that solves a KenKen puzzle using recursion and backtracking
+                            and displays the results graphically.</p>
+                        </div>
                     </div>
                     <div class="card-action">
                         <a class="blue-text" href="#">Link</a>
@@ -167,10 +182,11 @@
 
   <br><br>
 
-    <footer class="page-footer blue lighten-2">
+    <footer class="page-footer indigo-gradient">
       <div class="container">
         <div class="row">
           <div class="col l6 s12">
+            <h5 class="white-text">Contact Me</h5>
             <form class="col s12">
               <div class="row">
                 <div class="input-field col s6">
@@ -192,7 +208,7 @@
                 </div>
 
                 <div class="center">
-                    <button class="btn waves-effect waves-light red darken-1 white-text" type="submit">Submit</button>
+                    <input class="black-text" type="button"value="Submit">
                 </div>
               </div>
             </form>
@@ -216,7 +232,7 @@
         </div>
       </div>
 
-      <div class="footer-copyright blue">
+      <div class="footer-copyright indigo-gradient">
         <div class="container">
         &copy; Jonathan Lobo 2016
         </div>
