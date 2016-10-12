@@ -2,6 +2,15 @@ $(document).ready(function () {
   $('.slider').slider({full_width: true});
   $('.card-text').hide();
   $('.carousel.carousel-slider').carousel({full_width: true});
+  $('.img-carousel').slick({
+    slidesToShow: 1,
+    speed: 2000,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    dots: true,
+    infinite: true,
+    adaptiveHeight: true
+  });
 });
 
 $("#card1-div").mouseover(function(){
