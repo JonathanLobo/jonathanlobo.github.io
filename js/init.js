@@ -1,6 +1,7 @@
 $(document).ready(function () {
   $('.slider').slider({full_width: true});
   $('.card-text').hide();
+  $('.carousel.carousel-slider').carousel({full_width: true});
 });
 
 $("#card1-div").mouseover(function(){
