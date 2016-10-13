@@ -11,6 +11,7 @@ $(document).ready(function () {
     infinite: true,
     adaptiveHeight: true
   });
+  $('.scrollspy').scrollSpy();
 });
 
 $("#card1-div").mouseover(function(){
