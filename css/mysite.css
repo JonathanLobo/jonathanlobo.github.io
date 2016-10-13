@@ -179,3 +179,14 @@ input[type="submit"]:hover, .button:hover {
     position: relative;
     background-color: #2196F3;
 }
+
+.error {
+  color: white;
+  text-shadow: 1px 1px red;
+}
+
+.success-text {
+  color: white;
+  font-weight: bold;
+  text-shadow: 1px 1px green;
+}

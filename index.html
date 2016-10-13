@@ -338,29 +338,30 @@
         <div class="row">
           <div class="col l6 s12">
             <h5 class="white-text">Contact Me</h5>
-            <form class="col s12">
+            <form id="contactForm" class="col s12" method="get" action="">
               <div class="row">
                 <div class="input-field col s6">
                     <i class="material-icons prefix white-text">account_circle</i>
-                    <input id="nameBox" type="text" class="validate white-text">
+                    <input id="nameBox" type="text" class="white-text">
                     <label for="nameBox" class="white-text">Name</label>
                 </div>
-
                 <div class="input-field col s6">
                     <i class="material-icons prefix white-text">email</i>
-                    <input id="email" type="email" class="validate white-text">
+                    <input id="email" type="email" class="white-text">
                     <label for="email" class="white-text">E-mail</label>
                 </div>
-
                 <div class="input-field col s12">
                     <i class="material-icons prefix white-text">mode_edit</i>
                     <textarea id="comments" class="materialize-textarea white-text"></textarea>
                     <label for="comments" class="white-text">Comments</label>
                 </div>
-
                 <div class="center">
-                    <input class="black-text" type="submit"value="Submit">
+                    <input id="submitButton" class="black-text" type="submit"value="Submit">
                 </div>
+                <h6 id="errorText1" class="center error">Please enter your name!</h6>
+                <h6 id="errorText2" class="center error">Please enter a valid e-mail address!</h6>
+                <h6 id="errorText3" class="center error">Please enter some comments!</h6>
+                <h6 id="successText" class="center green-text success-text">Success! (If this form actually did something)</h6>
               </div>
             </form>
           </div>
@@ -374,10 +375,10 @@
             </ul>
             <h5 class="white-text">Connect with Me</h2>
               <ul>
-                <li><div class="brightness"><a class="white-text" href="https://www.linkedin.com/in/jonathan-lobo-8232b3103"><img src="./img/social-1_round-linkedin.svg"></div></a></li>
-                <li><div class="brightness"><a class="white-text" href="https://github.com/JonathanLobo"><img src="./img/social-1_round-github.svg"></div></a></li>
-                <li><div class="brightness"><a class="white-text" href="https://www.facebook.com/jlo.bro13"><img src="./img/social-1_round-facebook.svg"></div></a></li>
-                <li><div class="brightness"><a class="white-text" href="https://twitter.com/Lo_Bro17"><img src="./img/social-1_round-twitter.svg"></div></a></li>
+                <li><div class="brightness"><a class="white-text" href="https://www.linkedin.com/in/jonathan-lobo-8232b3103" target="_blank"><img src="./img/social-1_round-linkedin.svg"></div></a></li>
+                <li><div class="brightness"><a class="white-text" href="https://github.com/JonathanLobo" target="_blank"><img src="./img/social-1_round-github.svg"></div></a></li>
+                <li><div class="brightness"><a class="white-text" href="https://www.facebook.com/jlo.bro13" target="_blank"><img src="./img/social-1_round-facebook.svg"></div></a></li>
+                <li><div class="brightness"><a class="white-text" href="https://twitter.com/Lo_Bro17" target="_blank"><img src="./img/social-1_round-twitter.svg"></div></a></li>
               </ul>
           </div>
           <div class="col l3 s12">

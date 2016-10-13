@@ -12,28 +12,47 @@ $(document).ready(function () {
     adaptiveHeight: true
   });
   $('.scrollspy').scrollSpy();
+  $("#errorText1").hide();
+  $("#errorText2").hide();
+  $("#errorText3").hide();
+  $("#successText").hide();
 });
 
-$("#card1-div").mouseover(function(){
-    $("#card1").show();
+$(document).on('click', '#submitButton', function(e) {
+  e.preventDefault();
+  $("#errorText1").hide();
+  $("#errorText2").hide();
+  $("#errorText3").hide();
+  $("#successText").hide();
+
+  if (validate()) {
+    $("#successText").show();
+  }
 });
 
-$("#card1-div").mouseout(function(){
-    $("#card1").hide();
-});
+function validate() {
+  var name = document.getElementById("nameBox").value;
+  var email = document.getElementById("email").value;
+  var comments = document.getElementById("comments").value;
 
-$("#card2-div").mouseover(function(){
-    $("#card2").show();
-});
+  var emailRegex = /^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$/;
 
-$("#card2-div").mouseout(function(){
-    $("#card2").hide();
-});
+  var ret = true;
 
-$("#card3-div").mouseover(function(){
-    $("#card3").show();
-});
+  if (name === '') {
+    $("#errorText1").show();
+    ret = false;
+  }
 
-$("#card3-div").mouseout(function(){
-    $("#card3").hide();
-});
+  if (!emailRegex.test(email)) {
+    $("#errorText2").show();
+    ret = false;
+  }
+
+  if (comments === '') {
+    $("#errorText3").show();
+    ret = false;
+  }
+
+  return ret;
+}
