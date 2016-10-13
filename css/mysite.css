@@ -12,18 +12,6 @@ body {
   font-size: 1.2rem;
 }
 
-#mainBanner {
-  text-align: center;
-  display: block;
-}
-
-#mainImg {
-  border-radius: 5px;
-  background-color: #2196f3;
-  margin: 20px;
-  padding: 20px;
-}
-
 nav ul {
   list-style: none;
   padding: 0;
@@ -147,7 +135,6 @@ input[type="submit"]:hover, .button:hover {
 }
 
 .bold {
-  font-size: 1.1em !important;
   font-weight: bold;
 }
 
@@ -157,7 +144,9 @@ input[type="submit"]:hover, .button:hover {
 }
 
 .carousel {
-  height: 600px !important;
+  min-height: 600px;
+  max-height: 800px;
+  height: auto;
 }
 
 .main-carousel {
@@ -169,6 +158,10 @@ input[type="submit"]:hover, .button:hover {
   margin: auto;
 }
 
+.header-text {
+  text-shadow: 2px 2px #0f0f0f;
+}
+
 .school-img {
     height: auto;
     width: auto;
@@ -178,4 +171,11 @@ input[type="submit"]:hover, .button:hover {
 
 .float-left {
   float: left;
+}
+
+#mainBanner {
+    min-height: 400px;
+    max-height: 800px;
+    position: relative;
+    background-color: #2196F3;
 }
