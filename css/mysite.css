@@ -148,3 +148,7 @@ input[type="submit"]:hover, .button:hover {
   font-weight: bold;
   text-shadow: 1px 1px green;
 }
+
+.close-button:hover {
+  background-color: #ef5350 !important;
+}
