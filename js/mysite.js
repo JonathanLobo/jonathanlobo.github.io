@@ -11,7 +11,7 @@ $(document).ready(function () {
     infinite: true,
     adaptiveHeight: true
   });
-  $('.scrollspy').scrollSpy();
+  $('.scrollspy').scrollSpy({ scrollOffset: 50 });
   $('#errorText1').hide();
   $('#errorText2').hide();
   $('#errorText3').hide();
