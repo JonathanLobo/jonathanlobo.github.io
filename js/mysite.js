@@ -27,6 +27,9 @@ $(document).on('click', '#submitButton', function(e) {
 
   if (validate()) {
     $('#successText').fadeIn('slow');
+    document.getElementById('nameBox').value = '';
+    document.getElementById('email').value = '';
+    document.getElementById('comments').value = '';
   }
 });
 
