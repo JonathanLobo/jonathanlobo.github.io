@@ -3,5 +3,5 @@ Jonathan Lobo
 
 jpl68@pitt.edu
 
-Hosted at www.jonathanlobo.com!
+Hosted at [jonathanlobo.com](http://jonathanlobo.com)!
 
